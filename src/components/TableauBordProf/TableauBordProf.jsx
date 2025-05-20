@@ -1,8 +1,14 @@
 import React from 'react'
 import * as echarts from "echarts";
-
+import { useNavigate } from 'react-router-dom';
 
 const TableauBordProf = () => {
+
+  const navigate = useNavigate();
+  
+  const goToUploadPage = () => {
+    navigate('/uploadDocument');
+  };
 
     // Initialisation du graphique de progression
   React.useEffect(() => {
@@ -330,7 +336,8 @@ const TableauBordProf = () => {
                       connaissances de vos etudiants.
                     </p>
                   </div>
-                  <div className="border border-bleu-600 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                  <div className="border border-bleu-600 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer"
+                  onClick={goToUploadPage}>
                     <div className="flex items-center">
                       <div className="p-3 rounded-full bg-pink-100 text-pink-600">
                         <i className="fas fa-download text-xl"></i>
