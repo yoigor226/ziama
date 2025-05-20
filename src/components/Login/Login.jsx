@@ -59,17 +59,20 @@ const Login = () => {
     return (
         <div className='flex flex-col items-center min-h-screen bg-gray-50 dark:bg-white'>
             
-            <div className="flex items-center mt-8">
-              <div className="flex-shrink-0 flex items-center">
-                <i className="fas fa-graduation-cap text-indigo-600 text-5xl"></i>
-                <span className="mr-4 text-4xl font-bold text-indigo-600">
-                  FocusEduc
-                </span>
-              </div>
-            </div>
+            
 
             <div className="w-full max-w-md flex min-h-screen bg-gray-50 dark:bg-white">
             <div className="m-auto w-full max-w-md p-6 bg-white dark:bg-gray-900 shadow rounded-lg">
+                
+                <div className="flex items-center ml-20 mb-4">
+                        <div className="flex-shrink-0 flex items-center">
+                            <i className="fas fa-graduation-cap text-indigo-600 text-5xl"></i>
+                            <span className="mr-4 text-4xl font-bold text-indigo-600">
+                            FocusEduc
+                            </span>
+                        </div>
+                </div>
+
                 <h1 className="text-4xl font-semibold text-gray-700 dark:text-white text-center">
                 Login
                 </h1>
