@@ -5,8 +5,8 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Header = () => {
 
-  const [activeTab, setActiveTab] = useState("accueil");
-  const [searchQuery, setSearchQuery] = useState("");
+  // const [activeTab, setActiveTab] = useState("accueil");
+  // const [searchQuery, setSearchQuery] = useState("");
   const [showUserMenu, setShowUserMenu] = useState(false);
     
   return (
@@ -24,7 +24,7 @@ const Header = () => {
             </div>
 
             {/* Navigation principale */}
-            <nav className="hidden md:flex space-x-8 items-center">
+            {/* <nav className="hidden md:flex space-x-8 items-center">
               <button
                 onClick={() => setActiveTab("accueil")}
                 className={`whitespace-nowrap cursor-pointer flex items-center px-3 py-2 text-sm font-medium ${activeTab === "accueil" ? "text-indigo-600 border-b-2 border-indigo-600" : "text-gray-500 hover:text-indigo-500"}`}
@@ -32,6 +32,8 @@ const Header = () => {
                 <i className="fas fa-home mr-2"></i>
                 Accueil
               </button>
+
+
               <button
                 onClick={() => setActiveTab("bibliotheque")}
                 className={`whitespace-nowrap cursor-pointer flex items-center px-3 py-2 text-sm font-medium ${activeTab === "bibliotheque" ? "text-indigo-600 border-b-2 border-indigo-600" : "text-gray-500 hover:text-indigo-500"}`}
@@ -67,10 +69,10 @@ const Header = () => {
                 <i className="fas fa-chart-line mr-2"></i>
                 Tableau de Bord
               </button>
-            </nav>
+            </nav> */}
 
             {/* Barre de recherche */}
-            <div className="flex-1 flex items-center justify-center px-2 lg:ml-6 lg:justify-end">
+            {/* <div className="flex-1 flex items-center justify-center px-2 lg:ml-6 lg:justify-end">
               <div className="max-w-lg w-full lg:max-w-xs">
                 <label htmlFor="search" className="sr-only">
                   Rechercher
@@ -90,7 +92,7 @@ const Header = () => {
                   />
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* Profil utilisateur */}
             <div className="flex items-center">
@@ -141,7 +143,7 @@ const Header = () => {
       </header>
 
 
-      {(activeTab === "bibliotheque" ||
+      {/* {(activeTab === "bibliotheque" ||
             activeTab === "videos" ||
             activeTab === "exercices" ||
             activeTab === "collaboratif") && (
@@ -156,7 +158,7 @@ const Header = () => {
                 </p>
               </div>
             </div>
-          )}
+          )} */}
     </div>
   )
 }

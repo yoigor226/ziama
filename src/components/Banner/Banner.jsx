@@ -19,7 +19,7 @@ const Banner = () => {
   };
     
   return (
-    <main className="pt-20 pb-10 h-162 mb-20">
+    <main className="pt-20 pb-10 h-162 mb-15 ml-2">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative overflow-hidden bg-white">
             <div className="max-w-7xl mx-auto">
