@@ -36,7 +36,7 @@ const UploadDocument = () => {
                 return;
             }
 
-            const response = await axios.post(`http://localhost:4000/api/document/save/${profEmail}`, formData);
+            const response = await axios.post(`https://focuseduc-backend.onrender.com/api/document/save/${profEmail}`, formData);
             console.log('Réponse de l\'API :', response.data);
 
         if (response.status === 201) {

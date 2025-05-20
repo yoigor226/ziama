@@ -35,7 +35,7 @@ const UploadVideos = () => {
                 return;
             }
 
-            const response = await axios.post(`http://localhost:4000/api/videos/save/${profEmail}`, formData);
+            const response = await axios.post(`https://focuseduc-backend.onrender.com/api/videos/save/${profEmail}`, formData);
             console.log('Réponse de l\'API :', response.data);
 
         if (response.status === 201) {

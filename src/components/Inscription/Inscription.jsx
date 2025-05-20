@@ -43,7 +43,7 @@ const Inscription = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-        const response = await axios.post('http://localhost:4000/api/user/register', formData);
+        const response = await axios.post('https://focuseduc-backend.onrender.com/api/user/register', formData);
         console.log('Réponse de l\'API :', response.data);
 
         if (response.status === 201) {
