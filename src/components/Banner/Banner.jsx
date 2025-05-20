@@ -19,7 +19,7 @@ const Banner = () => {
   };
     
   return (
-    <main className="pt-20 pb-10 h-162">
+    <main className="pt-20 pb-10 h-162 mb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative overflow-hidden bg-white">
             <div className="max-w-7xl mx-auto">
@@ -80,7 +80,7 @@ const Banner = () => {
             <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
               <img
                 className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-126"
-                src="./src/assets/education.jpg"
+                src="https://images.squarespace-cdn.com/content/v1/584ae135440243178f9f5c9b/1511641698604-GVJVFTASASCY0PPJD1J4/19-Adam+Dickens+2017+-+Lyra+in+Africa%2C+Tanzania+127.jpg"
                 alt="Environnement d'apprentissage moderne"
               />
             </div>
