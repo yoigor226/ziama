@@ -7,6 +7,7 @@ import {
   Button,
 } from "@material-tailwind/react";
 import '/src/components/Banner/banner.css';
+import image from '../../assets/form.webp'
 
 const SixBanner = () => {
   return (
@@ -20,7 +21,7 @@ const SixBanner = () => {
                 className="m-0  w-2/5 shrink-0 rounded-r-none"
               >
                 <img
-                  src="/src/assets/form.webp"
+                  src={image}
                   alt="card-image"
                   className="h-full w-full object-cover"
                 />

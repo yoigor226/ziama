@@ -7,7 +7,7 @@ import {
   Button,
 } from "@material-tailwind/react";
 import '/src/components/Banner/banner.css';
-
+import image from '../../assets/ing.jpg'
 const ForBanner = () => {
   return (
     <div className="hidden md:block">
@@ -20,7 +20,7 @@ const ForBanner = () => {
                 className="m-0  w-2/5 shrink-0 rounded-r-none"
               >
                 <img
-                  src="/src/assets/ing.jpg"
+                  src={image}
                   alt="card-image"
                   className="h-full w-full object-cover"
                 />

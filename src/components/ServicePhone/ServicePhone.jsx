@@ -3,7 +3,11 @@ import React from 'react'
 import {
   Button,
 } from "@material-tailwind/react";
-
+import audit from '../../assets/audit.png'
+import mana from '../../assets/mana.png'
+import ing from '../../assets/ing.jpg'
+import ener from '../../assets/ener.webp'
+import form from '../../assets/form.webp'
 
     
 
@@ -14,30 +18,30 @@ const ServicePhone = () => {
     {
       id: 1,
       titre: "Audit Énergétique",
-      image:"/src/assets/audit.png",
+      image:audit,
     },
     {
       id: 2,
       titre: "Management de l'Énergie",
-      image:"/src/assets/mana.png",
+      image:mana,
     },
     {
       id: 3,
       titre: "Ingénierie Électrique",
-      image:"/src/assets/ing.jpg",
+      image:ing,
 
     },
     {
       id: 4,
       titre: "Énergies Renouvelables",
-      image:"/src/assets/ener.webp",
+      image:ener,
 
     },
 
     {
       id: 5,
       titre: "Formations Pratiques",
-      image:"/src/assets/form.webp",
+      image:form,
     },
     
   ];

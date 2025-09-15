@@ -7,6 +7,7 @@ import {
   Button,
 } from "@material-tailwind/react";
 import '/src/components/Banner/banner.css';
+import image from '../../assets/ener.webp'
 
 const FiveBanner = () => {
   return (
@@ -50,7 +51,7 @@ const FiveBanner = () => {
           className="m-0  w-2/5 shrink-0 rounded-r-none"
         >
           <img
-            src="/src/assets/ener.webp"
+            src={image}
             alt="card-image"
             className="h-full w-full object-cover w-32 h-32"
           />

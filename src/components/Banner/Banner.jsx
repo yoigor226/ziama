@@ -2,6 +2,8 @@ import React from 'react'
 import Slider from 'react-slick'
 import '/src/index.css'
 import '/src/components/Banner/banner.css';
+import b2 from '../../assets/b2.jpg'
+import logo from '../../assets/log.png'
 // import { useNavigate } from 'react-router-dom';
 
     
@@ -25,7 +27,7 @@ const Banner = () => {
       <div className="w-full h-full absolute inset-0">
         <img
           className="w-full h-full object-cover"
-          src="/src/assets/b2.jpg"
+          src={b2}
           alt="Environnement moderne"
         />
         
@@ -38,7 +40,7 @@ const Banner = () => {
         <div className="text-white mb-10">
           <div className=" hidden md:flex text-white mb-16 text-center flex flex-col items-center justify-center">
 
-            <img src='/src/assets/log.png' 
+            <img src={logo} 
               alt="Logo ou illustration"
               className="w-32 h-32 mb-4 object-contain"></img>
 

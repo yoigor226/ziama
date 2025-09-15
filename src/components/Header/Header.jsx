@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import '@fortawesome/fontawesome-free/css/all.min.css';
-
+import logo from '../../assets/log.png'
 import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
@@ -26,7 +26,7 @@ const Header = () => {
           <div className="flex justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0 flex items-center">
-                <img src="src/assets/log.png" width="50" height="50"></img>
+                <img src={logo} width="50" height="50"></img>
                 <span className="ml-4 mr-4 text-xl font-bold text-green-600">
                   ZIAMA ENGINEERING
                 </span>

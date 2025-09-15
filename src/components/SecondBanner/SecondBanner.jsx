@@ -10,7 +10,7 @@ import {
   Typography,
   Button,
 } from "@material-tailwind/react";
-
+import image from '../../assets/audit.png'
 const SecondBanner = () => {
 
   return (
@@ -37,7 +37,7 @@ const SecondBanner = () => {
                 className="m-0  w-2/5 shrink-0 rounded-r-none"
               >
                 <img
-                  src="/src/assets/audit.png"
+                  src={image}
                   alt="card-image"
                   className="h-full w-full object-cover"
                 />

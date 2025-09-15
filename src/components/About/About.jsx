@@ -1,4 +1,5 @@
 import React from 'react'
+import b6 from '../../assets/b6.jpg'
 
 const About = () => {
   return (
@@ -92,7 +93,7 @@ const About = () => {
             <div className="relative rounded-lg overflow-hidden">
               <img
                 className="w-full h-96 object-cover"
-                src="/src/assets/b6.jpg"
+                src={b6}
                 alt="Panneaux solaires"
               />
 
