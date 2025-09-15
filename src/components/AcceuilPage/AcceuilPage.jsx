@@ -2,10 +2,16 @@ import React from 'react';
 
 
 import Banner from '../Banner/Banner';
-import CoursDisponible from '../CoursDisponible/CoursDisponible';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer'
-
+import SecondBanner from '../SecondBanner/SecondBanner';
+import ThirdBanner from '../Banner/ThirdBanner';
+import FiveBanner from '../Banner/FiveBanner';
+import ForBanner from '../Banner/ForBanner';
+import SixBanner from '../Banner/SixBanner';
+import About from '../About/About';
+import ServicePhone from '../ServicePhone/ServicePhone'
+import Location from '../Location/Location';
 
 const AcceuilPage = () => {
 
@@ -15,7 +21,14 @@ const AcceuilPage = () => {
     <div>
       <Header/>
       <Banner/>
-      <CoursDisponible/>
+      <About/>
+      <SecondBanner />
+      <ThirdBanner/>
+      <ForBanner/>
+      <FiveBanner/>
+      <SixBanner/>
+      <ServicePhone/>
+      <Location/>
       <Footer/>
     </div>
   )

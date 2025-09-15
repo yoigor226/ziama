@@ -1,94 +1,114 @@
 import React from 'react'
 import Slider from 'react-slick'
 import '/src/index.css'
-import { useNavigate } from 'react-router-dom';
+import '/src/components/Banner/banner.css';
+// import { useNavigate } from 'react-router-dom';
 
     
 
 
 const Banner = () => {
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
-  const goToLoginPage = () => {
-    navigate('/login');
-  };
+  // const goToLoginPage = () => {
+  //   navigate('/login');
+  // };
 
-  const goToInscriptionPage = () => {
-    navigate('/inscription');
-  };
+  // const goToInscriptionPage = () => {
+  //   navigate('/inscription');
+  // };
     
   return (
-    <main className="pt-20 pb-10 h-162 mb-15 ml-2">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="relative overflow-hidden bg-white">
-            <div className="max-w-7xl mx-auto">
-              <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-1/2 lg:pb-8 xl:pb-0">
-                <svg
-                  className="hidden lg:block absolute right-0 inset-y-0 lg:h-126 w-48 text-white transform translate-x-1/2"
-                  fill="currentColor"
-                  viewBox="0 0 100 100"
-                  preserveAspectRatio="none"
-                  aria-hidden="true"
-                >
-                  <polygon points="50,0 100,0 50,100 0,100" />
-                </svg>
+    <main className="pt-20 pb-10 h-[800px] w-full relative z-0">
+      
+      <div className="w-full h-full absolute inset-0">
+        <img
+          className="w-full h-full object-cover"
+          src="/src/assets/b2.jpg"
+          alt="Environnement moderne"
+        />
+        
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+      </div>
 
-                <div className="pt-10 sm:pt-16 lg:pt-8 lg:pb-14 px-4 sm:px-6 lg:px-8">
-                  <div className="text-center lg:text-left">
+      {/* Contenu superposé */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center">
+       
+        <div className="text-white mb-10">
+          <div className=" hidden md:flex text-white mb-16 text-center flex flex-col items-center justify-center">
 
-                    <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-                      <span className="block">Apprendre sans limites</span>
-                      <span className="block text-indigo-600">
-                        Partout, tout le temps
-                      </span>
-                    </h1>
+            <img src='/src/assets/log.png' 
+              alt="Logo ou illustration"
+              className="w-32 h-32 mb-4 object-contain"></img>
 
-                    <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto lg:mx-0">
-                      Accédez à des milliers de ressources pédagogiques,
-                      collaborez avec vos pairs et suivez votre progression.
-                      Notre plateforme vous accompagne dans votre parcours
-                      d'apprentissage, même sans connexion internet.
-                    </p>
-
-                    <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-
-                      <div className="rounded-md shadow">
-                        <button className="whitespace-nowrap !rounded-button cursor-pointer w-full flex items-center justify-center px-8 py-3  text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
-                        onClick={goToInscriptionPage}>
-                          S'inscrire
-                        </button>
-                      </div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-green-500">
+              ZIAMA ENGINEERING
+            </h1>
+          </div>
 
 
-                      <div className="mt-3 sm:mt-0 sm:ml-3">
-                        <button className="whitespace-nowrap !rounded-button cursor-pointer w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
-                        onClick={goToLoginPage}>
-                          Se Connecter
-                        </button>
-                      </div>
-
-                    </div>
-
-                  </div>
-
-                </div>
-
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-white max-w-5xl mx-auto">
+         
+            <div className="flex flex-col items-center text-center p-4">
+              <div className="text-green-500 mb-4 text-4xl">
+                <i className="fas fa-bolt"></i>
               </div>
+              <h2 className="text-xl font-semibold mb-2">Ingénierie Électrique</h2>
+              <p className="text-sm md:text-base">
+                Solutions innovantes en ingénierie électrique pour répondre aux besoins locaux et industriels.
+              </p>
             </div>
 
-            <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-              <img
-                className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-126"
-                src="https://images.squarespace-cdn.com/content/v1/584ae135440243178f9f5c9b/1511641698604-GVJVFTASASCY0PPJD1J4/19-Adam+Dickens+2017+-+Lyra+in+Africa%2C+Tanzania+127.jpg"
-                alt="Environnement d'apprentissage moderne"
-              />
+            
+            <div className="flex flex-col items-center text-center p-4">
+              <div className="text-green-500 mb-4 text-4xl">
+                <i className="fas fa-leaf"></i>
+              </div>
+              <h2 className="text-xl font-semibold mb-2">Énergies Renouvelables</h2>
+              <p className="text-sm md:text-base">
+                Promotion des énergies durables pour réduire la dépendance aux sources polluantes.
+              </p>
             </div>
-          </div> 
+
+            
+            <div className="flex flex-col items-center text-center p-4">
+              <div className="text-green-500 mb-4 text-4xl">
+                <i className="fas fa-lightbulb"></i>
+              </div>
+              <h2 className="text-xl font-semibold mb-2">Efficacité Énergétique</h2>
+              <p className="text-sm md:text-base">
+                Amélioration de l'efficacité énergétique pour une stabilité à long terme.
+              </p>
+            </div>
+
+          </div>
+
+          <div className='text-white mt-4 text-center flex flex-col items-center justify-center'>
+            <button
+                
+              className='button'
+            >
+                
+              Nos Services
+            </button>
+
+          </div>  
+            
+
         </div>
+
+        {/* Barre de recherche et filtres */}
+        {/* <div className="bg-white p-4 rounded-lg shadow-lg flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4">
+          
+            
+            
+            
+          
+        </div> */}
+      </div>
     </main>
-           
-  )
+  );
 }
 
 export default Banner

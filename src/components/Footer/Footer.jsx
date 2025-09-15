@@ -2,55 +2,63 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className="mt-10 bg-gray-800 text-white">
+    <footer className="mt-10 bg-green-800 text-white">
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-lg font-semibold mb-4">À propos</h3>
-              <ul className="space-y-2">
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    Notre mission
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    Équipe
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    Partenaires
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    Carrières
-                  </a>
-                </li>
-              </ul>
+              <h3 className="text-lg font-semibold mb-4">Contacts</h3>
+
+              <div className="space-y-3">
+                <div className="flex items-center">
+                  <i className="fas fa-map-marker-alt text-white-400 mr-2"></i>
+                  <span className="text-white-400">Ouagadougou</span>
+                </div>
+                <div className="flex items-center">
+                  <i className="fas fa-phone-alt text-white-400 mr-2"></i>
+                  <span className="text-white-400">+226 76 57 61 01</span>
+                </div>
+                <div className="flex items-center">
+                  <i className="fas fa-map-marker-alt text-white-400 mr-2"></i>
+                  <span className="text-white-400">Bobo-Dioulasso</span>
+                </div>
+                <div className="flex items-center">
+                  <i className="fas fa-phone-alt text-white-400 mr-2"></i>
+                  <span className="text-white-400">+226 61 79 46 99</span>
+                </div>
+                <div className="flex items-center">
+                  <i className="fas fa-envelope text-white-400 mr-2"></i>
+                  <span className="text-white-400">engineeringziama@gmail.com</span>
+                </div>
+              </div>
+
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-4">Ressources</h3>
+              <h3 className="text-lg font-semibold mb-4">Services</h3>
               <ul className="space-y-2">
                 <li>
                   <a href="#" className="text-gray-300 hover:text-white">
-                    Bibliothèque
+                    Audit Énergétique
                   </a>
                 </li>
                 <li>
                   <a href="#" className="text-gray-300 hover:text-white">
-                    Vidéothèque
+                    Management de l'Énergie
                   </a>
                 </li>
                 <li>
                   <a href="#" className="text-gray-300 hover:text-white">
-                    Exercices
+                    Ingénierie Électrique
                   </a>
                 </li>
                 <li>
                   <a href="#" className="text-gray-300 hover:text-white">
-                    Forum
+                    Énergies Renouvelables
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" className="text-gray-300 hover:text-white">
+                    Formations Pratiques
                   </a>
                 </li>
               </ul>
