@@ -126,7 +126,7 @@ const FormationCard = () => {
                             </div>
 
                             <div className=''>
-                                <h3 className={`${item.couleur} ml-60 p-1 rounded-lg text-lg font-bold`}>
+                                <h3 className={`${item.couleur} ml-57 p-1 rounded-lg text-lg font-bold`}>
                                     {item.prix}
                                 </h3>
                             </div>
