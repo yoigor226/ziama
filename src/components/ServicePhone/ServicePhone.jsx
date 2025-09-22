@@ -5,14 +5,22 @@ import {
 } from "@material-tailwind/react";
 import audit from '../../assets/audit.png'
 import mana from '../../assets/mana.png'
-import ing from '../../assets/ing.jpg'
+import ing from '../../assets/ing.webp'
 import ener from '../../assets/ener.webp'
 import form from '../../assets/form.webp'
 
+import { useNavigate } from 'react-router-dom';
     
 
 
 const ServicePhone = () => {
+
+
+    const navigate = useNavigate();
+
+  const goToFormationPage = ()=>{
+    navigate('/formation');
+  }
 
     const service = [
     {
@@ -42,6 +50,7 @@ const ServicePhone = () => {
       id: 5,
       titre: "Formations Pratiques",
       image:form,
+      page: goToFormationPage
     },
     
   ];
@@ -50,15 +59,15 @@ const ServicePhone = () => {
     <div className="flex items-center md:hidden">
                 
                 <div className="ml-2 mr-2 grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-4 gap-6">
-                  {service.map((livre) => (
+                  {service.map((item) => (
                     <div
-                      key={livre.id}
+                      key={item.id}
                       className="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer transform transition duration-300 hover:scale-105"
                     >
                       <div className="h-64 overflow-hidden">
                         <img
-                          src={livre.image}
-                          alt={livre.titre}
+                          src={item.image}
+                          alt={item.titre}
                           className="w-full h-full object-cover object-top"
                         />
                       </div>
@@ -69,10 +78,10 @@ const ServicePhone = () => {
                        
                         <div className="mt-2 flex justify-between items-center">
                           <h3 className="text-lg font-semibold text-gray-900">
-                          {livre.titre}
+                          {item.titre}
                         </h3>
                           <a href="#" className="inline-block">
-                                      <Button variant="text" className="flex items-center gap-2 button1">
+                                      <Button variant="text" onClick={item.page} className="flex items-center gap-2 button1">
                                         Plus
                                         <svg
                                           xmlns="http://www.w3.org/2000/svg"

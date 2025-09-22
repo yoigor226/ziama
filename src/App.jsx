@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import AcceuilPage from './components/AcceuilPage/AcceuilPage'
 import Devis from './components/Devis/Devis';
 import SecondBanner from './components/SecondBanner/SecondBanner';
-
+import Formation from './components/Formation/Formation';
 
 
 
@@ -17,7 +17,9 @@ const App = () => {
       <Routes>
         <Route path="/" element={<AcceuilPage />} />
         <Route path="/devis" element={<Devis />} />
-        
+        <Route path="/formation" element={<Formation />} />
+
+
         <Route path="/service" element={<SecondBanner />} />
         {/* <Route path="/pageProfesseur" element={<PageProfesseur />} /> */}
         {/* <Route path="/uploadDocument" element={<UploadDocument/>} />

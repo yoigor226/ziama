@@ -14,7 +14,7 @@ import image from '../../assets/audit.png'
 const SecondBanner = () => {
 
   return (
-    <div>
+    <div id="services">
       <div className="w-full bg-white-100 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-green-500 mb-4">

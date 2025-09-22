@@ -12,6 +12,8 @@ import SixBanner from '../Banner/SixBanner';
 import About from '../About/About';
 import ServicePhone from '../ServicePhone/ServicePhone'
 import Location from '../Location/Location';
+import Formation from '../Formation/Formation';
+import Rdv from '../Rdv/Rdv';
 
 const AcceuilPage = () => {
 
@@ -19,6 +21,7 @@ const AcceuilPage = () => {
 
   return (
     <div>
+     
       <Header/>
       <Banner/>
       <About/>
@@ -28,6 +31,7 @@ const AcceuilPage = () => {
       <FiveBanner/>
       <SixBanner/>
       <ServicePhone/>
+      <Rdv/>
       <Location/>
       <Footer/>
     </div>

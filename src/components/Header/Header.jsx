@@ -2,6 +2,9 @@ import React, {useState} from 'react'
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import logo from '../../assets/log.png'
 import { useNavigate } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
+
 
 const Header = () => {
 
@@ -10,6 +13,10 @@ const Header = () => {
   const goToDevisPage = () => {
     navigate('/devis');
   };
+
+  const goToFormationPage = ()=>{
+    navigate('/formation');
+  }
 
   const goToServicePage = () => {
     navigate('/service');
@@ -35,23 +42,68 @@ const Header = () => {
 
             {/* Navigation principale */}
             <nav className="hidden md:flex space-x-8 items-center">
-              <button
-                onClick={() => setActiveTab("accueil")}
-                className={`whitespace-nowrap cursor-pointer flex items-center px-3 py-2 text-sm font-medium ${activeTab === "accueil" ? "text-green-600 border-b-2 border-green-600" : "text-gray-500 hover:text-green-500"}`}
+
+
+              <Link
+                          to="#"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            document.querySelector('#home').scrollIntoView({
+                              behavior: 'smooth'
+                            });
+                          }}
+                          
+                        >
+                  <button
+                    onClick={() => setActiveTab("accueil")}
+                    className={`whitespace-nowrap cursor-pointer flex items-center px-3 py-2 text-sm font-medium ${activeTab === "accueil" ? "text-green-600 border-b-2 border-green-600" : "text-gray-500 hover:text-green-500"}`}
+                  >
+                    <i className="fas fa-home mr-2"></i>
+                    Accueil
+                  </button>
+                  
+              </Link>              
+
+              <Link
+                to="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.querySelector('#services').scrollIntoView({
+                    behavior: 'smooth'
+                  });
+                }}
+                
               >
-                <i className="fas fa-home mr-2"></i>
-                Accueil
-              </button>
+                <button
+                  onClick={() => setActiveTab("service") && goToServicePage}
+                  className={`whitespace-nowrap cursor-pointer flex items-center px-3 py-2 text-sm font-medium ${activeTab === "service" ? "text-green-600 border-b-2 border-green-600" : "text-gray-500 hover:text-green-500"}`}
+                >
+                  <i className="fas fa-toolbox mr-2"></i>
+                  Service
+                </button>
+
+            </Link>
 
 
               <button
-                onClick={() => setActiveTab("service") && goToServicePage}
-                className={`whitespace-nowrap cursor-pointer flex items-center px-3 py-2 text-sm font-medium ${activeTab === "service" ? "text-green-600 border-b-2 border-green-600" : "text-gray-500 hover:text-green-500"}`}
+                onClick={goToFormationPage}
+                className={`whitespace-nowrap cursor-pointer flex items-center px-3 py-2 text-sm font-medium ${activeTab === "formation" ? "text-green-600 border-b-2 border-green-600" : "text-gray-500 hover:text-green-500"}`}
               >
-                <i className="fas fa-toolbox mr-2"></i>
-                Service
+                <i className="fas fa-graduation-cap mr-2"></i>
+                Formations
               </button>
               
+
+              <Link
+                to="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.querySelector('#about').scrollIntoView({
+                    behavior: 'smooth'
+                  });
+                }}
+                className="hover:text-blue-400"
+              >
               <button
                 onClick={() => setActiveTab("about")}
                 className={`whitespace-nowrap cursor-pointer flex items-center px-3 py-2 text-sm font-medium ${activeTab === "about" ? "text-green-600 border-b-2 border-green-600" : "text-gray-500 hover:text-green-500"}`}
@@ -59,7 +111,16 @@ const Header = () => {
                 <i className="fas fa-info-circle mr-2"></i>
                 A propos
               </button>
+              </Link>
 
+
+              {/* <button
+                onClick={goToDevisPage}
+                className={`whitespace-nowrap cursor-pointer flex items-center px-3 py-2  text-gray  text-sm font-medium ${activeTab === "devis" ? "text-green-600 border-b-2 border-green-600" : "text-gray-500 hover:text-green-500"}`}
+              >
+                <i className="far fa-calendar-check mr-2"></i>
+                Prendre un rendez-vous
+              </button> */}
 
               <button
                 onClick={goToDevisPage}
@@ -68,7 +129,7 @@ const Header = () => {
                 
                 Demander un devis
               </button>
-           
+                        
               
             </nav>
 
@@ -91,38 +152,94 @@ const Header = () => {
 
                     {showUserMenu && (
                       <div className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
-                        <button
-                          onClick={() => setActiveTab("accueil")}
-                          className={`whitespace-nowrap cursor-pointer flex items-center px-3 py-2 text-sm font-medium ${activeTab === "accueil" ? "text-green-600 border-b-2 border-green-600" : "text-gray-500 hover:text-green-500"}`}
-                        >
-                          <i className="fas fa-home mr-2"></i>
-                          Accueil
-                        </button>
-
-
-                        <button
-                          onClick={() => setActiveTab("service")}
-                          className={`whitespace-nowrap cursor-pointer flex items-center px-3 py-2 text-sm font-medium ${activeTab === "service" ? "text-green-600 border-b-2 border-green-600" : "text-gray-500 hover:text-green-500"}`}
-                        >
-                          <i className="fas fa-toolbox mr-2"></i>
-                          Service
-                        </button>
                         
+                        <Link
+                          to="#"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            document.querySelector('#home').scrollIntoView({
+                              behavior: 'smooth'
+                            });
+                          }}
+                          
+                        >
+                          <button
+                            onClick={() => setActiveTab("accueil")}
+                            className={`whitespace-nowrap cursor-pointer flex items-center px-3 py-2 text-sm font-medium ${activeTab === "accueil" ? "text-green-600 border-b-2 border-green-600" : "text-gray-500 hover:text-green-500"}`}
+                          >
+                            <i className="fas fa-home mr-2"></i>
+                            Accueil
+                          </button>
+                        </Link>  
+
+                        <Link
+                          to="#"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            document.querySelector('#services').scrollIntoView({
+                              behavior: 'smooth'
+                            });
+                          }}
+                          
+                        >
+                          <button
+                            onClick={() => setActiveTab("service")}
+                            className={`whitespace-nowrap cursor-pointer flex items-center px-3 py-2 text-sm font-medium ${activeTab === "service" ? "text-green-600 border-b-2 border-green-600" : "text-gray-500 hover:text-green-500"}`}
+                          >
+                            <i className="fas fa-toolbox mr-2"></i>
+                            Service
+                          </button>
+
+                        </Link>
+
+                        <Link
+                          to="#"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            document.querySelector('#rdv').scrollIntoView({
+                              behavior: 'smooth'
+                            });
+                          }}
+                          
+                        >   
+                            <button
+                              onClick={() => setActiveTab("rdv")}
+                              className={`whitespace-nowrap cursor-pointer flex items-center px-3 py-2  text-gray  text-sm font-medium ${activeTab === "rdv" ? "text-green-600 border-b-2 border-green-600" : "text-gray-500 hover:text-green-500"}`}
+                            >
+                              <i class="far fa-calendar-check mr-2"></i>
+                              Prendre un rendez-vous
+                            </button>
+                        </Link>
+
+
                         <button
-                          onClick={() => setActiveTab("devis")}
+                          onClick={ goToDevisPage}
                           className={`whitespace-nowrap cursor-pointer flex items-center px-3 py-2 text-sm font-medium ${activeTab === "devis" ? "text-green-600 border-b-2 border-green-600" : "text-gray-500 hover:text-green-500"}`}
                         >
                           <i className="fas fa-tasks mr-2"></i>
                           Demander un devis
                         </button>
 
-                        <button
-                          onClick={() => setActiveTab("about")}
-                          className={`whitespace-nowrap cursor-pointer flex items-center px-3 py-2 text-sm font-medium ${activeTab === "about" ? "text-green-600 border-b-2 border-green-600" : "text-gray-500 hover:text-green-500"}`}
-                        >
-                          <i className="fas fa-info-circle mr-2"></i>
-                          A propos
-                        </button>
+
+                        <Link
+                          to="#"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            document.querySelector('#about').scrollIntoView({
+                              behavior: 'smooth'
+                            });
+                          }}
+                          
+                        > 
+                          <button
+                            onClick={() => setActiveTab("about")}
+                            className={`whitespace-nowrap cursor-pointer flex items-center px-3 py-2 text-sm font-medium ${activeTab === "about" ? "text-green-600 border-b-2 border-green-600" : "text-gray-500 hover:text-green-500"}`}
+                          >
+                            <i className="fas fa-info-circle mr-2"></i>
+                            A propos
+                          </button>
+
+                        </Link> 
                       </div>
                     )}
                   </div>

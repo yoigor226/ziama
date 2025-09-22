@@ -3,7 +3,7 @@ import b6 from '../../assets/b6.jpg'
 
 const About = () => {
   return (
-    <div className="w-full bg-gray-50 py-12">
+    <div id="about" className="w-full bg-gray-50 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-4 lg:px-8">
         <div className="flex flex-col md:flex-row items-center">
           {/* Partie gauche : texte et services */}
@@ -99,11 +99,11 @@ const About = () => {
 
               {/* Badges de statistiques */}
               <div className="absolute top-4 right-4 bg-yellow-400 text-gray-800 p-4 rounded-lg shadow-lg text-center">
-                <div className="text-2xl font-bold">0+</div>
+                <div className="text-2xl font-bold">4+</div>
                 <div className="text-sm">Années d'Expérience</div>
               </div>
               <div className="absolute bottom-4 right-4 bg-white text-gray-800 p-4 rounded-lg shadow-lg text-center">
-                <div className="text-2xl font-bold text-blue-600">0+</div>
+                <div className="text-2xl font-bold text-blue-600">53+</div>
                 <div className="text-sm">Projets Réalisés</div>
               </div>
             </div>

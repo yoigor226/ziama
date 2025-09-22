@@ -7,7 +7,7 @@ import {
   Button,
 } from "@material-tailwind/react";
 import '/src/components/Banner/banner.css';
-import image from '../../assets/ing.jpg'
+import image from '../../assets/ing.webp'
 const ForBanner = () => {
   return (
     <div className="hidden md:block">

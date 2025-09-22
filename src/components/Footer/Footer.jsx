@@ -14,17 +14,36 @@ const Footer = () => {
                   <span className="text-white-400">Ouagadougou</span>
                 </div>
                 <div className="flex items-center">
-                  <i className="fas fa-phone-alt text-white-400 mr-2"></i>
-                  <span className="text-white-400">+226 76 57 61 01</span>
+                  
+                  <span className="text-white-400"><i className="fas fa-phone-alt text-white-400 mr-2"></i>+226 76 57 61 01
+                    <br></br><i className="fas fa-phone-alt text-white-400 mr-2"></i>+226 76 54 19 13
+                    <br></br><i className="fas fa-phone-alt text-white-400 mr-2"></i>+226 56 61 99 69
+                    </span>
                 </div>
                 <div className="flex items-center">
                   <i className="fas fa-map-marker-alt text-white-400 mr-2"></i>
                   <span className="text-white-400">Bobo-Dioulasso</span>
                 </div>
                 <div className="flex items-center">
-                  <i className="fas fa-phone-alt text-white-400 mr-2"></i>
-                  <span className="text-white-400">+226 61 79 46 99</span>
+                  
+                  <span className="text-white-400"><i className="fas fa-phone-alt text-white-400 mr-2"></i>+226 61 79 46 99
+                  <br></br><i className="fas fa-phone-alt text-white-400 mr-2"></i>+226 76 57 61 01
+                  <br></br><i className="fas fa-phone-alt text-white-400 mr-2"></i>+226 53 06 38 45
+                  </span>
+                  
                 </div>
+
+
+                <div className="flex items-center">
+                  
+                  <span className="text-white-400"><i className="fab fa-whatsapp text-xl mr-2"></i>WhatsApp
+                    <br></br> <span className='ml-2'>+226 61 79 46 99</span>
+                  </span>
+                  
+                </div>
+                
+
+
                 <div className="flex items-center">
                   <i className="fas fa-envelope text-white-400 mr-2"></i>
                   <span className="text-white-400">engineeringziama@gmail.com</span>

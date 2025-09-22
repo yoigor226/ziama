@@ -5,7 +5,7 @@ import '/src/components/Banner/banner.css';
 import b2 from '../../assets/b2.jpg'
 import logo from '../../assets/log.png'
 // import { useNavigate } from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
     
 
 
@@ -22,7 +22,7 @@ const Banner = () => {
   // };
     
   return (
-    <main className="pt-20 pb-10 h-[800px] w-full relative z-0">
+    <main id='home' className="pt-20 pb-10 h-[800px] w-full relative z-0">
       
       <div className="w-full h-full absolute inset-0">
         <img
@@ -87,13 +87,26 @@ const Banner = () => {
           </div>
 
           <div className='text-white mt-4 text-center flex flex-col items-center justify-center'>
-            <button
-                
-              className='button'
-            >
-                
-              Nos Services
-            </button>
+            
+            <Link
+                to="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.querySelector('#services').scrollIntoView({
+                    behavior: 'smooth'
+                  });
+                }}
+                className="hover:text-blue-400"
+              >
+                <button
+                    
+                  className='button'
+                >
+                    
+                  Nos Services
+                </button>
+
+            </Link>
 
           </div>  
             

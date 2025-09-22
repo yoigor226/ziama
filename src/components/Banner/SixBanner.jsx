@@ -9,7 +9,16 @@ import {
 import '/src/components/Banner/banner.css';
 import image from '../../assets/form.webp'
 
+import { useNavigate } from 'react-router-dom';
+
 const SixBanner = () => {
+
+  const navigate = useNavigate();
+
+  const goToFormationPage = ()=>{
+    navigate('/formation');
+  }
+
   return (
     <div className="hidden md:block">
       <div className="w-full bg-white-200 p-4 mt-8"> 
@@ -36,7 +45,7 @@ const SixBanner = () => {
                   compétences en efficacité énergétique et technologies vertes.
                 </Typography>
                 <a href="#" className="inline-block">
-                  <Button variant="text" className="flex items-center gap-2 button1">
+                  <Button variant="text" onClick={goToFormationPage} className="flex items-center gap-2 button1">
                     Decouvrir
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
