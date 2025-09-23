@@ -33,15 +33,16 @@ const Devis = () => {
 
     // Remplace ces valeurs par celles de ton compte EmailJS
     emailjs.send(
-      'service_aphpa0d', // Remplace par ton Service ID
-      'template_vlc3pba', // Remplace par ton Template ID
+      'service_aphpa0d', 
+      'template_vlc3pba', 
       formData,
-      'fWPtr8A3O2GR0zbA5' // Remplace par ton User ID
+      'fWPtr8A3O2GR0zbA5' 
     )
     .then((result) => {
       console.log(result.text);
       alert("Votre demande a été envoyée avec succès!");
       setFormData({
+        formation: 'DEMANDE DE DEVIS',
         nomComplet: '',
         telephone: '',
         email: '',

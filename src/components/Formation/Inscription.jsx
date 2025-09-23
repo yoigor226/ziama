@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import inscri from '../../assets/inscri.jpg';
+import emailjs from 'emailjs-com';
+
 
 const Inscription = () => {
   const [formData, setFormData] = useState({
@@ -20,7 +22,27 @@ const Inscription = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
-    // Ajoute ici la logique pour traiter les données du formulaire
+    emailjs.send(
+      'service_aphpa0d', // Remplace par ton Service ID
+      'template_vlc3pba', // Remplace par ton Template ID
+      formData,
+      'fWPtr8A3O2GR0zbA5' // Remplace par ton User ID
+    )
+    .then((result) => {
+      console.log(result.text);
+      alert(`Merci, ${formData.nomComplet}! de vous etre inscrit pour ${formData.serviceSouhaite}. Nous vous contacterons bientôt.`);
+      setFormData({
+        formation: 'INSCRIPTION',
+        nomComplet: '',
+        email: '',
+        telephone: '',
+        serviceSouhaite: '',
+        
+      });
+    }, (error) => {
+      console.log(error.text);
+      alert("Une erreur est survenue, veuillez réessayer.");
+    });
   };
 
   return (
@@ -38,11 +60,11 @@ const Inscription = () => {
                   <form className="form-horizontal w-3/4 mx-auto" onSubmit={handleSubmit}>
                     <div className="flex flex-col mt-4">
                       <input
-                        id="name"
+                        id="nomComplet"
                         type="text"
                         className="flex-grow h-8 px-2 rounded bg-gray-200"
-                        name="name"
-                        value={formData.name}
+                        name="nomComplet"
+                        value={formData.nomComplet}
                         onChange={handleChange}
                         placeholder="Nom & Prenom"
                         required
@@ -62,11 +84,11 @@ const Inscription = () => {
                     </div>
                     <div className="flex flex-col mt-4">
                       <input
-                        id="number"
+                        id="telephone"
                         type="tel"
                         className="flex-grow h-8 px-2 rounded bg-gray-200"
-                        name="number"
-                        value={formData.number}
+                        name="telephone"
+                        value={formData.telephone}
                         onChange={handleChange}
                         placeholder="+226 XX XX XX XX"
                         required

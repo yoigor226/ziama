@@ -46,6 +46,7 @@ const Rdv = () => {
       console.log(result.text);
       alert(`Merci, ${formData.nomComplet}! Votre rendez-vous pour ${formData.service} le ${formData.date} à ${formData.heure} a été enregistré. Nous vous contacterons bientôt.`);
       setFormData({
+        
         nomComplet: '',
         email: '',
         telephone: '',
