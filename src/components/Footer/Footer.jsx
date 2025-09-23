@@ -16,7 +16,6 @@ const Footer = () => {
                 <div className="flex items-center">
                   
                   <span className="text-white-400"><i className="fas fa-phone-alt text-white-400 mr-2"></i>+226 76 57 61 01
-                    <br></br><i className="fas fa-phone-alt text-white-400 mr-2"></i>+226 76 54 19 13
                     <br></br><i className="fas fa-phone-alt text-white-400 mr-2"></i>+226 56 61 99 69
                     </span>
                 </div>
