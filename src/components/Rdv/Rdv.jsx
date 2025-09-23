@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import emailjs from 'emailjs-com';
 
 const Rdv = () => {
 
@@ -35,9 +36,28 @@ const Rdv = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Rendez-vous pris:', formData);
-    alert(`Merci, ${formData.nomComplet}! Votre rendez-vous pour ${formData.service} le ${formData.date} à ${formData.heure} a été enregistré.`);
-    // Ajoute ici la logique pour envoyer les données à ton backend ou service d'email
+    emailjs.send(
+      'service_aphpa0d', // Remplace par ton Service ID
+      'template_rlvhfb6', // Remplace par ton Template ID
+      formData,
+      'fWPtr8A3O2GR0zbA5' // Remplace par ton User ID
+    )
+    .then((result) => {
+      console.log(result.text);
+      alert(`Merci, ${formData.nomComplet}! Votre rendez-vous pour ${formData.service} le ${formData.date} à ${formData.heure} a été enregistré. Nous vous contacterons bientôt.`);
+      setFormData({
+        nomComplet: '',
+        email: '',
+        telephone: '',
+        service: '',
+        date: '',
+        heure: '',
+        message: '',
+      });
+    }, (error) => {
+      console.log(error.text);
+      alert("Une erreur est survenue, veuillez réessayer.");
+    });
   };
 
 

@@ -33,10 +33,10 @@ const Devis = () => {
 
     // Remplace ces valeurs par celles de ton compte EmailJS
     emailjs.send(
-      'service_xmv0dyn', // Remplace par ton Service ID
-      'template_f8v637r', // Remplace par ton Template ID
+      'service_aphpa0d', // Remplace par ton Service ID
+      'template_vlc3pba', // Remplace par ton Template ID
       formData,
-      'YOUR_USER_ID' // Remplace par ton User ID
+      'fWPtr8A3O2GR0zbA5' // Remplace par ton User ID
     )
     .then((result) => {
       console.log(result.text);
