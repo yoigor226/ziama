@@ -14,6 +14,7 @@ import ServicePhone from '../ServicePhone/ServicePhone'
 import Location from '../Location/Location';
 import Formation from '../Formation/Formation';
 import Rdv from '../Rdv/Rdv';
+import CategorieSection from '../CategorieSection/CategorieSection'
 
 const AcceuilPage = () => {
 
@@ -25,6 +26,7 @@ const AcceuilPage = () => {
       <Header/>
       <Banner/>
       <About/>
+      <CategorieSection/>
       <SecondBanner />
       <ThirdBanner/>
       <ForBanner/>

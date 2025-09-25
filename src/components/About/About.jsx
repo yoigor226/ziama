@@ -1,6 +1,8 @@
 import React from 'react'
 import b6 from '../../assets/b6.jpg'
 
+
+
 const About = () => {
   return (
     <div id="about" className="w-full bg-gray-50 py-12">
