@@ -6,6 +6,7 @@ import {
 import secu from '../../assets/secu.jpg'
 import auto from '../../assets/auto.jpg'
 import rebo from '../../assets/rebo.jpg'
+import group from '../../assets/group.jpg'
 import maintenance from '../../assets/maintenance.jpg'
 import bt from '../../assets/bt.webp'
 import solar from '../../assets/solar.webp'
@@ -22,7 +23,7 @@ const FormationCard = () => {
             id: 1,
             titre: "Installation Électrique BT",
             image: bt,
-            prix: "150 000 FCFA",
+            prix: "100 000 FCFA",
             couleur: "bg-white"
         },
 
@@ -30,7 +31,7 @@ const FormationCard = () => {
             id: 2,
             titre: "Énergie Solaire: Conception et Réalisation",
             image: solar,
-            prix: "200 000 FCFA",
+            prix: "100 000 FCFA",
             couleur: "bg-white"
         },
 
@@ -38,7 +39,7 @@ const FormationCard = () => {
             id: 3,
             titre: "Audit Énergétique",
             image: audi,
-            prix: "180 000 FCFA",
+            prix: "150 000 FCFA",
             couleur: "bg-white"
         },
 
@@ -46,7 +47,7 @@ const FormationCard = () => {
             id: 4,
             titre: "Management de l'Énergie",
             image: manage,
-            prix: "170 000 FCFA",
+            prix: "100 000 FCFA",
             couleur: "bg-white"
         },
 
@@ -54,7 +55,7 @@ const FormationCard = () => {
             id: 5,
             titre: "Autocad Électrique",
             image: auto,
-            prix: "160 000 FCFA",
+            prix: "100 000 FCFA",
             couleur: "bg-white"
         },
 
@@ -62,7 +63,7 @@ const FormationCard = () => {
             id: 6,
             titre: "Rebobinage des Machines Électriques",
             image: rebo,
-            prix: "190 000 FCFA",
+            prix: "150 000 FCFA",
             couleur: "bg-white"
         },
 
@@ -70,7 +71,7 @@ const FormationCard = () => {
             id: 7,
             titre: "Automates Programmables Industriel",
             image: automate,
-            prix: "220 000 FCFA",
+            prix: "150 000 FCFA",
             couleur: "bg-white"
         },
 
@@ -78,7 +79,7 @@ const FormationCard = () => {
             id: 8,
             titre: "Habilitation Électrique",
             image: habili,
-            prix: "140 000 FCFA",
+            prix: "100 000 FCFA",
             couleur: "bg-white"
         },
 
@@ -86,7 +87,7 @@ const FormationCard = () => {
                 id: 9,
                 titre: "Maintenance des Installations Électriques",
                 image: maintenance,
-                prix: "175 000 FCFA",
+                prix: "100 000 FCFA",
                 couleur: "bg-white"
         },
 
@@ -94,7 +95,15 @@ const FormationCard = () => {
                 id: 10,
                 titre: "Sécurité Électrique",
                 image: secu,
-                prix: "165 000 FCFA",
+                prix: "100 000 FCFA",
+                couleur: "bg-white"
+        },
+
+        {
+                id: 11,
+                titre: "Maintenance Des Groupes Électrogenes",
+                image: group,
+                prix: "100 000 FCFA",
                 couleur: "bg-white"
         },
         
