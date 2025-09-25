@@ -68,13 +68,21 @@ const About = () => {
             </div>
 
             <div className=' items-center md:hidden'>
+
+              
+
                 <div className=" top-4 right-4 bg-yellow-400 text-gray-800 p-4 rounded-lg shadow-lg text-center">
-                    <div className="text-2xl font-bold">0+</div>
+                    <div className="text-2xl font-bold">4+</div>
                     <div className="text-sm">Années d'Expérience</div>
                 </div>
 
+                <div className="mt-4 top-4 right-4 bg-blue-400 text-gray-800 p-4 rounded-lg shadow-lg text-center">
+                    <div className="text-2xl font-bold">150+</div>
+                    <div className="text-sm">Personnes Formation</div>
+                </div>
+
                 <div className="mt-4 mb-4 bottom-4 right-4 bg-white text-gray-800 p-4 rounded-lg shadow-lg text-center">
-                    <div className="text-2xl font-bold text-blue-600">0+</div>
+                    <div className="text-2xl font-bold text-blue-600">53+</div>
                     <div className="text-sm">Projets Réalisés</div>
                 </div>
             </div>
@@ -102,10 +110,23 @@ const About = () => {
                 <div className="text-2xl font-bold">4+</div>
                 <div className="text-sm">Années d'Expérience</div>
               </div>
+
+
+              <div className="absolute bottom-4 left-4 bg-blue-400 text-gray-800 p-4 rounded-lg shadow-lg text-center">
+                <div className="text-2xl font-bold text-white">150+</div>
+                <div className="text-sm text-white">Personnes Formation</div>
+              </div>
+              
               <div className="absolute bottom-4 right-4 bg-white text-gray-800 p-4 rounded-lg shadow-lg text-center">
                 <div className="text-2xl font-bold text-blue-600">53+</div>
                 <div className="text-sm">Projets Réalisés</div>
               </div>
+
+              
+
+              
+
+
             </div>
           </div>
 
